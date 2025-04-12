@@ -38,6 +38,9 @@
         const fillLoveButton = document.querySelector('.heart-container .button-group.top button');
         const takeLoveButton = document.querySelector('.heart-container .button-group.bottom button');
         const heartImage = document.querySelector('.heart-image');
+        const makeWishButton = document.querySelector('.cake-container .button-group.top button');
+        const lightCandleButton = document.querySelector('.cake-container .button-group:not(.top) button');
+        const cakeImage = document.querySelector('.cake-image');
 
         fillLoveButton.addEventListener('click', () => {
             heartImage.src = '../src/filled-heart.png';
@@ -45,6 +48,14 @@
 
         takeLoveButton.addEventListener('click', () => {
             heartImage.src = '../src/empty-heart.png';
+        });
+
+        makeWishButton.addEventListener('click', () => {
+            cakeImage.src = '../src/blow-candle.png';
+        });
+
+        lightCandleButton.addEventListener('click', () => {
+            cakeImage.src = '../src/light-candle.png';
         });
     </script>
 </body>
