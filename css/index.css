@@ -3,7 +3,7 @@ body, html {
     padding: 0;
     height: 100%;
     font-family: sans-serif;
-    background: url('../src/background-img.jpg') no-repeat center center/cover;
+    background: url('../src/background-img.jpg');
   }
 
 h1 {
@@ -22,19 +22,44 @@ h1 {
     cursor: pointer;
 }
 
-.heart-container {
+.heart-container,
+.cake-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 3rem); /* minus some space for h1 */
+    margin: 1rem;
+    border-radius: 15px;
     background: rgba(255, 255, 255, 0.3);
-    /* semi-transparent */
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    /* for Safari */
-    border-radius: 15px;
-}
+    padding: 2rem;
+  }
 
-.heart-container img {
-    width: 35rem;
-    padding: 1rem 1rem;
+  .heart-image,
+  .cake-image {
+    width: 250px;
+    height: auto;
+    margin: 1rem 0;
+  }
+
+  .button-group {
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    gap: 1rem;
+  }
+
+  button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 10px;
+    background: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background: #ffe4ec;
+  }
