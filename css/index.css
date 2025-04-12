@@ -1,0 +1,40 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: sans-serif;
+    background: url('../src/background-img.jpg') no-repeat center center/cover;
+  }
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    text-shadow:
+        -2px -2px 0 #000000,
+        2px -2px 0 #ffffff,
+        -2px 2px 0 #000000,
+        2px 2px 0 #000000;
+    font-weight: bold;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    text-align: center;
+    padding: 0 1rem;
+    cursor: pointer;
+}
+
+.heart-container {
+    background: rgba(255, 255, 255, 0.3);
+    /* semi-transparent */
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    /* for Safari */
+    border-radius: 15px;
+}
+
+.heart-container img {
+    width: 35rem;
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
