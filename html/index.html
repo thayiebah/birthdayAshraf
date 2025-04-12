@@ -34,4 +34,17 @@
         </div>
     </div>
     
+    <script>
+        const fillLoveButton = document.querySelector('.heart-container .button-group.top button');
+        const takeLoveButton = document.querySelector('.heart-container .button-group.bottom button');
+        const heartImage = document.querySelector('.heart-image');
+
+        fillLoveButton.addEventListener('click', () => {
+            heartImage.src = '../src/filled-heart.png';
+        });
+
+        takeLoveButton.addEventListener('click', () => {
+            heartImage.src = '../src/empty-heart.png';
+        });
+    </script>
 </body>
