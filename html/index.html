@@ -9,7 +9,8 @@
 <body>
     <h1>Happy Birthday Sayang</h1>
     <div class="header-container">
-        <img src="../src/music-pause.png" class="music-pause"/>
+        <img src="../src/music-pause.png" class="music-pause" alt="music pause"/>
+        <img src="../src/music-play.png" class="music-play" alt="music play"/>
         <img src="../src/message.png" class="message" alt="message"/>
         <img src="../src/letter.png" class="letter" alt="letter"/>
     </div>
@@ -34,8 +35,29 @@
             </div>
         </div>
     </div>
+
+    <audio id="cas" src="../src/cas.mp3"></audio>
+
     
     <script>
+        const pauseButton = document.querySelector('.music-pause');
+        const playButton = document.querySelector('.music-play');
+
+        pauseButton.addEventListener('click', () => {
+            pauseButton.style.display = 'none';
+            playButton.style.display = 'block';
+            const audio = document.getElementById('cas');
+            audio.play();
+        });
+
+        playButton.addEventListener('click', ()=> {
+            playButton.style.display = 'none';
+            pauseButton.style.display = 'block';
+            const audio = document.getElementById('cas');
+            audio.pause();
+        });
+
+        
         const message = document.querySelector('.message');
         const letter = document.querySelector('.letter');
 

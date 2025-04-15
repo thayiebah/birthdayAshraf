@@ -30,14 +30,22 @@ h1 {
   gap: 1rem;
 }
 
-.music-pause {
-  width: 2.5rem;
+.music-pause,
+.music-play{
+  width: 3.5rem;
   height: auto;
+  cursor: pointer;
+}
+
+.music-play {
+  display: none;
+  cursor: pointer;
 }
 
 .message {
-  width: 3rem;
+  width: 4rem;
   height: auto;
+  padding-bottom: 1rem;
   cursor: pointer;
 }
 
