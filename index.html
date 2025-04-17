@@ -5,24 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Birthday Sayang!</title>
-    <link rel="icon" href="../src/heart.png" />
-    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="icon" href="src/heart.png" />
+    <link rel="stylesheet" href="css/index.css" />
 </head>
 
 <body>
     <h1>Happy Birthday Sayang</h1>
     <div class="header-container">
-        <img src="../src/music-pause.png" class="music-pause" alt="music pause" />
-        <img src="../src/music-play.png" class="music-play" alt="music play" />
-        <img src="../src/message.png" class="message" alt="message" />
-        <img src="../src/letter.png" class="letter" alt="letter" />
+        <img src="src/music-pause.png" class="music-pause" alt="music pause" />
+        <img src="src/music-play.png" class="music-play" alt="music play" />
+        <img src="src/message.png" class="message" alt="message" />
+        <img src="src/letter.png" class="letter" alt="letter" />
     </div>
     <div class="content-wrapper">
         <div class="heart-container">
             <div class="button-group top">
                 <button>Fill with love</button>
             </div>
-            <img src="../src/filled-heart.png" class="heart-image" />
+            <img src="src/filled-heart.png" class="heart-image" />
             <div class="button-group bottom">
                 <button>Take love away</button>
             </div>
@@ -32,14 +32,14 @@
             <div class="button-group top">
                 <button>Make a wish & blow</button>
             </div>
-            <img src="../src/light-candle.png" class="cake-image" />
+            <img src="src/light-candle.png" class="cake-image" />
             <div class="button-group">
                 <button>Light candle</button>
             </div>
         </div>
     </div>
 
-    <audio id="cas" src="../src/cas.mp3"></audio>
+    <audio id="cas" src="src/cas.mp3"></audio>
 
 
     <script>
@@ -80,19 +80,19 @@
         const cakeImage = document.querySelector('.cake-image');
 
         fillLoveButton.addEventListener('click', () => {
-            heartImage.src = '../src/filled-heart.png';
+            heartImage.src = 'src/filled-heart.png';
         });
 
         takeLoveButton.addEventListener('click', () => {
-            heartImage.src = '../src/empty-heart.png';
+            heartImage.src = 'src/empty-heart.png';
         });
 
         makeWishButton.addEventListener('click', () => {
-            cakeImage.src = '../src/blow-candle.png';
+            cakeImage.src = 'src/blow-candle.png';
         });
 
         lightCandleButton.addEventListener('click', () => {
-            cakeImage.src = '../src/light-candle.png';
+            cakeImage.src = 'src/light-candle.png';
         });
     </script>
 </body>
