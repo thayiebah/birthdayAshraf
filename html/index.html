@@ -1,6 +1,9 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Birthday Sayang!</title>
     <link rel="icon" href="../src/heart.png" />
     <link rel="stylesheet" href="../css/index.css" />
@@ -9,10 +12,10 @@
 <body>
     <h1>Happy Birthday Sayang</h1>
     <div class="header-container">
-        <img src="../src/music-pause.png" class="music-pause" alt="music pause"/>
-        <img src="../src/music-play.png" class="music-play" alt="music play"/>
-        <img src="../src/message.png" class="message" alt="message"/>
-        <img src="../src/letter.png" class="letter" alt="letter"/>
+        <img src="../src/music-pause.png" class="music-pause" alt="music pause" />
+        <img src="../src/music-play.png" class="music-play" alt="music play" />
+        <img src="../src/message.png" class="message" alt="message" />
+        <img src="../src/letter.png" class="letter" alt="letter" />
     </div>
     <div class="content-wrapper">
         <div class="heart-container">
@@ -24,7 +27,7 @@
                 <button>Take love away</button>
             </div>
         </div>
-    
+
         <div class="cake-container">
             <div class="button-group top">
                 <button>Make a wish & blow</button>
@@ -38,7 +41,7 @@
 
     <audio id="cas" src="../src/cas.mp3"></audio>
 
-    
+
     <script>
         const pauseButton = document.querySelector('.music-pause');
         const playButton = document.querySelector('.music-play');
@@ -50,22 +53,22 @@
             audio.play();
         });
 
-        playButton.addEventListener('click', ()=> {
+        playButton.addEventListener('click', () => {
             playButton.style.display = 'none';
             pauseButton.style.display = 'block';
             const audio = document.getElementById('cas');
             audio.pause();
         });
 
-        
+
         const message = document.querySelector('.message');
         const letter = document.querySelector('.letter');
 
-        message.addEventListener('mouseover', ()=> {
+        message.addEventListener('mouseover', () => {
             letter.style.display = 'block';
         });
 
-        message.addEventListener('mouseout', ()=> {
+        message.addEventListener('mouseout', () => {
             letter.style.display = 'none';
         });
 
@@ -93,3 +96,5 @@
         });
     </script>
 </body>
+
+</html>
